@@ -6,7 +6,7 @@
 <body>
 <?php include 'Templates/header.html' ;?>
 
-<img src="assets/images/Modraxis.png" alt="" style="background-color: var(--color-main)" width="100%">
+<img src="assets/images/Varumox.png" alt="" style="background-color: var(--color-main)" width="100%">
 
 <div class="background">
     <div class="container text-center">
