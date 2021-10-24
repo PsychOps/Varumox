@@ -38,10 +38,6 @@
         </a>
         <p class="textwidth text-start">Varumox offers a freely usable API to fetch data from in JSON format. Offering a variety of different and detailed, endpoints, it is designed to make getting data as easy as possible without the necessity of using an API token. The API can grab data about both authors and plugins, including plugin files.</p>
 <div class="background">
-    <div class="container text-center">
-        <p class="fs-1 bold">Quality plugins, at no cost.</span></p>
-        <p>Varumox strives to provide Minecraft plugin authors and users with an <b class="explicified">easy-to-use UI</b> offering <b class="explicified">completely free plugins</b>. Additionally, Varumox offers various <b class="explicified">authentication-free API routes</b> to get plugin information or files from. Varumox is <b class="explicified">completely open source</b> <a href="https://github.com/PsychOps/Varumox">on GitHub</a>.
-    </div>
 </div>
 
 </body>
