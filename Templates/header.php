@@ -17,17 +17,7 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-                <?php
-echo '<p>access token:</p>';
-echo '<p><code>' . $accessToken . '</code></p>';
-echo '<br />';
-
-if ($accessToken !="") {
-    echo '<p>Logged in!</p>';
-    } else {
-        // Not logged in
-        echo <a href="https://github.com/login/oauth/authorize?client_id=ebdf3797bfd3bae04bda" type="button" class="btn btn-outline-warning" style="margin-left: 10px">Login with Github</a>;
-    }
+<a type="button" class="btn btn-outline-warning" style="margin-left: 10px">Login with Github</a>
             </div>
         </div>
     </nav>
