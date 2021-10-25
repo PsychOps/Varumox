@@ -17,7 +17,9 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-                        <a type="button" class="btn btn-outline-warning" style="margin-left: 10px">Login with Github</a>
+                    <div id="app">
+                        <a type="button" id="login" onclick="window.location.href = 'https://github.com/login/oauth/authorize?client_id=11e66e9f52ad1b3185b0&redirect_uri=http://localhost:9000&scope=read:user'" class="btn btn-outline-warning" style="margin-left: 10px">Login with Github</a>
+                    </div>
             </div>
         </div>
     </nav>
