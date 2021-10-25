@@ -3,12 +3,6 @@
 
 <?php include 'Templates/head.html' ;?>
 
-<?php
-session_start();
-
-$accessToken = $_SESSION['my_access_token_accessToken'];
-?>
-
 <body>
 <?php include 'Templates/header.html' ;?>
 
