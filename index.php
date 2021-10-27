@@ -11,7 +11,7 @@
 <div class="background" id="about">
     <div class="container text-center" id="description">
         <p class="bold fs-1 explicified">Quality plugins, at no cost.</span></p>
-        <p>Varumox strives to provide Minecraft plugin authors and users with an <a class="explicified bold" href="#UI">easy-to-use UI</a> offering <a class="explicified bold" href="#Free">completely free plugins</a>. Additionally, Varumox offers various <a class="explicified bold" href="#API">authentication-free API routes</a> to get plugin information or files from. Varumox is <a class="explicified" href="#Open-source">completely open source</a> <a href="https://github.com/PsychOps/Varumox" target="_blank">on GitHub</a>.
+        <p>Varumox strives to provide Minecraft plugin authors and users with an <a class="explicified bold" href="#UI">easy-to-use UI</a> offering <a class="explicified bold" href="#Free">completely free plugins</a>. Additionally, Varumox offers various <a class="explicified bold" href="#API">authentication-free API routes</a> to get plugin information or files from. Varumox is <a class="explicified bold" href="#Open-source">completely open source</a> <a href="https://github.com/PsychOps/Varumox" target="_blank">on GitHub</a>.
     </div>
 
     <div class="container topspace-50 text-start" id="UI">
