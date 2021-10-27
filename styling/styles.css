@@ -76,6 +76,6 @@ body, html {
 }
 
 .plugins-nav:hover {
-    background-color: #D3D3D3;
+    background-color: rgb(205, 224, 224);
     transition: 0.25s;
 }
