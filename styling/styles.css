@@ -74,11 +74,10 @@ body, html {
 .plugins-nav:after {
     transform: scaleX(0);
     transform-origin: bottom right ;
-    transition: 0.25s;
+    transition: transform 0.25s ease-out;
 }
 
-.plugins-nav:hover {
+.plugins-nav:hover:after {
     transform: scaleY(1);
     background-color: #D3D3D3;
-    transition: 0.25s;
 }
