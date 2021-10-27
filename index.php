@@ -39,11 +39,11 @@
         <p class="textwidth text-start">Varumox offers a freely usable API to fetch data from in JSON format. Offering a variety of different and detailed, endpoints, it is designed to make getting data as easy as possible without the necessity of using an API token. The API can grab data about both authors and plugins, including plugin files.</p>
 
         <div class="container topspace-50 text-end" id="Open-source">
-        <a href=#API>
-            <i class="fas fa-link explicified"></i>
+        <a href=#Open-source>
             <span class="bold fs-2 explicified">Completely open source</span>
+            <i class="fas fa-link explicified"></i>
         </a>
-        <p class="text-end">Varumox is completely open source. This means that its code is publicly accessible on GitHub but it's tied to the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL-3.0 (GNU General Public License v3.0) license.</a> Feel free to participate on the project by making a pull request on GitHub if you want to change anything. All those who help will get thanked by our Team on the <a href="https://psychops.tk/credit.php">PsychOps website</a></p>
+        <p class="text-end" style="margin-left: 50%">Varumox is completely open source. This means that its code is publicly accessible on GitHub but it's tied to the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL-3.0 (GNU General Public License v3.0) license.</a> Feel free to participate on the project by making a pull request on GitHub if you want to change anything. All those who help will get thanked by our Team on the <a href="https://psychops.tk/credit.php">PsychOps website</a></p>
 <div class="background">
 </div>
 
