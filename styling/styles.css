@@ -63,11 +63,15 @@ body, html {
     left: 0;
     background-color: #0087ca;
     transform-origin: bottom right;
-    background-color: #D3D3D3;
     transition: transform 0.25s ease-out;
 }
   
 .plugins-nav:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.plugins-nav:hover {
+    background-color: #D3D3D3;
+    transition: 0.25s;
 }
