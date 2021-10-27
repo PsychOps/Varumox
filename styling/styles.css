@@ -63,6 +63,7 @@ body, html {
     left: 0;
     background-color: #0087ca;
     transform-origin: bottom right;
+    background-color: #D3D3D3;
     transition: transform 0.25s ease-out;
 }
   
