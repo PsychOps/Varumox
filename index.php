@@ -11,7 +11,7 @@
 <div class="background" id="about">
     <div class="container text-center" id="description">
         <p class="bold fs-1 explicified">Quality plugins, at no cost.</span></p>
-        <p>Varumox strives to provide Minecraft plugin authors and users with an <a class="explicified bold" href="#UI">easy-to-use UI</a> offering <a class="explicified bold" href="#Free">completely free plugins</a>. Additionally, Varumox offers various <a class="explicified bold" href="#API">authentication-free API routes</a> to get plugin information or files from. Varumox is <b class="explicified" href="#Open-source">completely open source</b> <a href="https://github.com/PsychOps/Varumox" target="_blank">on GitHub</a>.
+        <p>Varumox strives to provide Minecraft plugin authors and users with an <a class="explicified bold" href="#UI">easy-to-use UI</a> offering <a class="explicified bold" href="#Free">completely free plugins</a>. Additionally, Varumox offers various <a class="explicified bold" href="#API">authentication-free API routes</a> to get plugin information or files from. Varumox is <a class="explicified" href="#Open-source">completely open source</a> <a href="https://github.com/PsychOps/Varumox" target="_blank">on GitHub</a>.
     </div>
 
     <div class="container topspace-50 text-start" id="UI">
@@ -28,22 +28,22 @@
                 <span class="bold fs-2 explicified">Completely free plugins</span>
                 <i class="fas fa-link explicified"></i>
             </a>
-            <p class="text-end" style="margin-left: 50%">Varumox is free forever. This includes not only the project itself, but also the plugins listed on it. We do not offer any way to redirect to paid plugin websites or to make them paid on Varumox.</p>
+            <p class="textwidth text-end" style="margin-left: 50%">Varumox is free forever. This includes not only the project itself, but also the plugins listed on it. We do not offer any way to redirect to paid plugin websites or to make them paid on Varumox.</p>
     </div>
 
-    <div class="container topspace-50 text-start" id="API">
+    <div class="container topspace-50 text-end" id="API">
         <a href=#API>
-            <i class="fas fa-link explicified"></i>
             <span class="bold fs-2 explicified">Authorization-free API</span>
-        </a>
-        <p class="textwidth text-start">Varumox offers a freely usable API to fetch data from in JSON format. Offering a variety of different and detailed, endpoints, it is designed to make getting data as easy as possible without the necessity of using an API token. The API can grab data about both authors and plugins, including plugin files.</p>
-
-        <div class="container topspace-50 text-end" id="Open-source">
-        <a href=#Open-source>
-            <span class="bold fs-2 explicified">Completely open source</span>
             <i class="fas fa-link explicified"></i>
         </a>
-        <p class="text-end" style="margin-left: 50%">Varumox is completely open source. This means that its code is publicly accessible on GitHub but it's tied to the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL-3.0 (GNU General Public License v3.0) license.</a> Feel free to participate on the project by making a pull request on GitHub if you want to change anything. All those who help will get thanked by our Team on the <a href="https://psychops.tk/credit.php">PsychOps website</a></p>
+        <p class="textwidth text-end">Varumox offers a freely usable API to fetch data from in JSON format. Offering a variety of different and detailed, endpoints, it is designed to make getting data as easy as possible without the necessity of using an API token. The API can grab data about both authors and plugins, including plugin files.</p>
+
+        <div class="container topspace-50 text-start" id="Open-source">
+        <a href=#Open-source>
+            <i class="fas fa-link explicified"></i>
+            <span class="bold fs-2 explicified">Completely open source</span>
+        </a>
+        <p class=" textwidth text-start" style="margin-left: 50%">Varumox is completely open source. This means that its code is publicly accessible on GitHub but it's tied to the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL-3.0 (GNU General Public License v3.0) license.</a> Feel free to participate on the project by making a pull request on GitHub if you want to change anything. All those who help will get thanked by our Team on the <a href="https://psychops.tk/credit.php">PsychOps website</a></p>
 <div class="background">
 </div>
 
