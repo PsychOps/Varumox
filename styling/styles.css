@@ -73,7 +73,6 @@ body, html {
 
 .plugins-nav:after {
     transform: scaleX(0);
-    transform-origin: bottom right ;
     transition: 0.25s;
 }
 
