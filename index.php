@@ -44,7 +44,7 @@
             <i class="fas fa-link explicified"></i>
             <span class="bold fs-2 explicified">Completely open source</span>
         </a>
-        <p class=" textwidth text-end" style="margin-left: 50%">Varumox is completely open source. This means that its code is publicly accessible on GitHub but it's tied to the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL-3.0 (GNU General Public License v3.0) license.</a> Feel free to participate on the project by making a pull request on GitHub if you want to change anything. All those who help will get thanked by our Team on the <a href="https://psychops.tk/credit.php">PsychOps website</a></p>
+        <p class=" textwidth text-end" style="margin-left: 50%">Varumox is completely open source. This means that its code is publicly accessible on GitHub but it's tied to the <a href="https://psychops.tk/legal.php" target=_blank>GPL-3.0 (GNU General Public License v3.0) license.</a> Feel free to participate on the project if you want to change anything. We will give to all those who help proper credit on the <a href="https://psychops.tk/credit.php">PsychOps website</a></p>
     </div>
 <div class="background">
 </div>
