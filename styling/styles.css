@@ -5,6 +5,10 @@ body, html {
     font-family: var(--font-main);
 }
 
+.poimg {
+    float: right;
+}
+
 header {
     background-color: var(--color-dark)
 }
