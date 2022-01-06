@@ -13,6 +13,12 @@ header {
     font-size: 100px;
 }
 
+@media only screen and (max-width: 768px) {
+    .typewriter {
+        font-size: 35px;
+    }
+}
+
 span {
     border-right: .05em solid;
     animation: caret 1s steps(1) infinite;
