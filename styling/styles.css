@@ -13,6 +13,10 @@ header {
     background-color: var(--color-dark);
 }
 
+.pageHeader {
+    background-color: var(--color-dark-secondary);
+}
+
 .typewriter {
     font-size: 100px;
 }
@@ -130,4 +134,8 @@ span {
 .plugins-nav:hover {
     background-color: rgb(205, 224, 224);
     transition: 0.25s;
+}
+
+.avatar {
+    border-radius: 50%;
 }
