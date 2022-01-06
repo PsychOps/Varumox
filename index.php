@@ -5,7 +5,6 @@
 
 <header>
     <img src="/assets/images/Varumox.png" height="100">
-    <img class="poimg" src="/assets/images/PsychOpsTransparent.png" height="100">
     <header>
         <div>
             <div class="mask container">
