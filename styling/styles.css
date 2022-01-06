@@ -1,8 +1,49 @@
 @import "variables.css";
 
 body, html {
- background-color: var(--color-main);
- font-family: var(--font-main);
+    background-color: var(--color-dark);
+    font-family: var(--font-main);
+}
+
+header {
+    background-color: var(--color-dark)
+}
+
+.typewriter {
+    font-size: 100px;
+}
+
+span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.btn-primary {
+    background-color: var(--color-main) !important;
+    border-radius: 25px !important;
+    font-weight: var(--extra-bold) !important;
+    font-size: 100% !important;
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary) !important;
+    border-radius: 25px !important;
+    font-weight: var(--extra-bold) !important;
+    font-size: 100% !important;
+}
+
+.text-white {
+    color: var(--color-light);
+}
+
+.text-highlight {
+    color: var(--color-main);
 }
 
 .topspace-10 {
@@ -38,10 +79,11 @@ body, html {
 .bold {
  font-weight: bold;
 }
-
+/*
 .explicified {
  color: var(--color-secondary-text);
-}
+}*/
+
 
 .textwidth {
  width: 50%
