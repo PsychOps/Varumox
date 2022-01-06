@@ -9,6 +9,10 @@ header {
     background-color: var(--color-dark)
 }
 
+.header {
+    background-color: var(--color-dark);
+}
+
 .typewriter {
     font-size: 100px;
 }
