@@ -2,19 +2,16 @@
     <div class="container headerContainer">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a href="https://psychops.tk" target="_blank">
-                    <img src="/assets/images/S1.png" height="75px">
-                </a>
                 <a href="/index.php">
                     <img src="/assets/images/Varumox V.png" alt="" height="75px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" style="animation: none; border-right: none"></span>
+                    <i class="fab fa-buffer fa-3x" style="color: var(--color-main)"></i><span class="navbar-toggler-icon" style="animation: none; border-right: none"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="btn btn-outline-success" aria-current="page" href="/plugins.php">Plugins</a>
+                            <a aria-current="page" href="/plugins.php" class="text-white">Plugins</a>
                         </li>
                     </ul>
                     <!--
@@ -23,10 +20,10 @@
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                     -->
-
+                    <hr style="color: white">
                         <!--NOT LOGGED IN-->
                         <div id="app">
-                            <a type="button" id="login" class="btn btn-outline-warning" style="margin-left: 10px">Login with discord</a>
+                            <a type="button" id="login" class="btn btn-outline-warning">Login with discord</a>
                             <!-- This button should simply log someone in with discord oauth and redirect back to the page they were on. when logged in, in the button's place their discord avatar should be shown. Clicking it should then open a dropdown allowing them to go to their profile page and to log out. -->
                         </div>
 
@@ -37,7 +34,7 @@
                             <!--this should display the user's pfp-->
                             <img src="https://cdn.discordapp.com/embed/avatars/1.png" class="round" height="75" alt="">
                             <!--this should display the user's username-->
-                            <h2 class="profile-header-text">user</h2>
+                            <!-- <h2 class="profile-header-text">user</h2> -->
                         </button>
 
                             <div class="dropdown-content">
