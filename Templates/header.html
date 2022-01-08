@@ -23,9 +23,29 @@
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                     -->
+
+                        <!--NOT LOGGED IN-->
                         <div id="app">
                             <a type="button" id="login" class="btn btn-outline-warning" style="margin-left: 10px">Login with discord</a>
                             <!-- This button should simply log someone in with discord oauth and redirect back to the page they were on. when logged in, in the button's place their discord avatar should be shown. Clicking it should then open a dropdown allowing them to go to their profile page and to log out. -->
+                        </div>
+
+
+                        <!--LOGGED IN-->
+                        <div class="dropdown">
+                            <button class="dropdown-btn">
+                            <!--this should display the user's pfp-->
+                            <img src="https://cdn.discordapp.com/embed/avatars/1.png" class="round" height="75" alt="">
+                            <!--this should display the user's username-->
+                            <h2 class="profile-header-text">user</h2>
+                        </button>
+
+                            <div class="dropdown-content">
+                                <!--this redirects to the user's profile-->
+                                <a href="profile.html">Profile</a>
+                                <!--this logs out the user-->
+                                <a href="">Log out</a>
+                            </div>
                         </div>
                 </div>
             </div>
