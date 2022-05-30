@@ -23,8 +23,11 @@
                     <hr style="color: white">
                         <!--NOT LOGGED IN-->
                         <div id="app">
-                            <a type="button" id="login" class="btn btn-outline-warning">Login with discord</a>
+                            <a type="button" id="discordLogin" class="btn btn-outline-warning">Login with discord</a>
                             <!-- This button should simply log someone in with discord oauth and redirect back to the page they were on. when logged in, in the button's place their discord avatar should be shown. Clicking it should then open a dropdown allowing them to go to their profile page and to log out. -->
+
+                            <a type="button" href="https://github.com/login/oauth/authorize?scope=user:email&client_id=0bea0b16ef7a5564ae58" id="githubLogin" class="btn btn-outline-warning">Login with Github</a>
+                            <!-- This button should do what it obviously should. The client id should also be correct.-->
                         </div>
 
 
