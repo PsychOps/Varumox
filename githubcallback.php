@@ -1,8 +1,7 @@
 <?php
 session_start();
 include 'db_connection.php';
-
-
+require_once 'secret_config.php';
 
 function httpPost($url, $data, $headers = array())
 {
@@ -28,9 +27,6 @@ function httpGet($url, $data, $headers = array())
     curl_close($curl);
     return $response;
 }
-
-$GithubClientSecret = "dae4b4a22c4eba90a2c8b3158e101edd43e92bc3";
-$GithubClientId = "0bea0b16ef7a5564ae58"; // These need to be correct as well
 
 $tempCode = $_REQUEST["code"];
 
