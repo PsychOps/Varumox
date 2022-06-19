@@ -12,3 +12,10 @@ mysqli_query($db_conn, "CREATE DATABASE IF NOT EXISTS " . $MySQLDatabase);
 
 mysqli_select_db($db_conn, $MySQLDatabase);
 
+mysqli_query($db_conn, "CREATE TABLE IF NOT EXISTS users (
+                                     Id char(20) NOT NULL UNIQUE PRIMARY KEY,
+                                     Username TEXT NOT NULL,
+                                     Bio TEXT,
+                                     Socials JSON
+                                    );
+");
