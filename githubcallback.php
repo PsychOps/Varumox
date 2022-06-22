@@ -28,6 +28,12 @@ function httpGet($url, $data, $headers = array())
     return $response;
 }
 
+function generateId(){
+    $min = 10000;
+    $max = 99999;
+    return strval(rand($min, $max)) . strval(rand($min, $max)) . strval(rand($min, $max)) . strval(rand($min, $max));
+}
+
 $tempCode = $_REQUEST["code"];
 
 // use key 'http' even if you send the request to https://...
@@ -36,20 +42,32 @@ $authResult = httpPost("https://github.com/login/oauth/access_token", array(
         'client_secret' => $GithubClientSecret,
         'code' => $tempCode)
 );
-//if ($authResult === FALSE) { /* Handle error */ }
 
 preg_match('/access_token=(.+)&scope/', $authResult, $output_array);
 
-$_SESSION["github_accesskey"] = $output_array[1];
+$githubAccesskey = $output_array[1];
 
-$userData = httpGet("https://api.github.com/user", array(), array(
+$userData = json_decode(httpGet("https://api.github.com/user", array(), array(
     "Accept: application/vnd.github.v3+json",
-    "Authorization: token " . $_SESSION["github_accesskey"]
-));
+    "Authorization: token " . $_SESSION[$githubAccesskey]
+)));
 
-// SAVE TO DB HERE
-// CHECK IF ACCOUNT EXISTS IF SO GO TO IT
-// ELSE MAKE NEW ONE
+if(strval($userData->id) == ""){
+    echo "This isn't supposed to happen, <a href='/'>begone</a>!";
+    echo "On a sidenote, for some reason, we didn't get your Github Id.";
+    die();
+}
+
+$generatedId = generateId();
+
+$userStmt = $db_conn->prepare("INSERT IGNORE INTO users (Id, Username, GithubId) VALUES (?, ?, ?);");
+$userStmt->bind_param("sss", $generatedId, $userData->name, strval($userData->id));
+$userStmt->execute();
+$userStmt->close();
+
+// GET THE USER, IT SHOULD EXIST NOW!
+// THEN SAVE THE ID IN THE SESSION VARIABLES
+// THEN DO THE NEXT REDIRECT THING
 
 // redirect to profile page
 /*ob_start();
