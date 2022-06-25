@@ -29,12 +29,10 @@ $Socials = $userRows["Socials"];
 <p>Current user id: <?php echo $UserId ?></p>
 <p>Current username: <?php echo $Username ?></p>
 <p></p>
-<form>
-    <textarea>
-        <?php echo $Bio ?>
-    </textarea>
-    <input type="submit" value="Save changes to bio">
-</form>
+
+<textarea>
+    <?php echo $Bio ?>
+</textarea>
 
 <p>Socials</p>
 <ul>
@@ -47,7 +45,6 @@ $Socials = $userRows["Socials"];
         })
     </script>
 </ul>
-
 
 </body>
 
