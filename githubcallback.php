@@ -49,7 +49,7 @@ $githubAccesskey = $output_array[1];
 
 $userData = json_decode(httpGet("https://api.github.com/user", array(), array(
     "Accept: application/vnd.github.v3+json",
-    "Authorization: token " . $_SESSION[$githubAccesskey]
+    "Authorization: token " . $githubAccesskey
 )));
 
 if(strval($userData->id) == ""){
@@ -60,17 +60,23 @@ if(strval($userData->id) == ""){
 
 $generatedId = generateId();
 
+// IGNORE cause if it already exists, it'll just fail silently (Disclaimer: May also suppress other errors)
 $userStmt = $db_conn->prepare("INSERT IGNORE INTO users (Id, Username, GithubId) VALUES (?, ?, ?);");
 $userStmt->bind_param("sss", $generatedId, $userData->name, strval($userData->id));
 $userStmt->execute();
 $userStmt->close();
+
+$user = mysqli_query($db_conn, "SELECT Id FROM users WHERE GithubId = " . strval($userData->id));
+$userRows = $user->fetch_assoc();
+$userId = $userRows["Id"];
+$_SESSION["userId"] = $userId;
 
 // GET THE USER, IT SHOULD EXIST NOW!
 // THEN SAVE THE ID IN THE SESSION VARIABLES
 // THEN DO THE NEXT REDIRECT THING
 
 // redirect to profile page
-/*ob_start();
+ob_start();
 header('Location: '."profile.php");
 ob_end_flush();
-die();*/
+die();
