@@ -27,25 +27,14 @@ $Socials = $userRows["Socials"];
 <?php include 'Templates/header.html' ;?>
 
 <p>Current user id: <?php echo $UserId ?></p>
-<p>Current username: <?php echo $Username ?></p>
-<p></p>
 
-<textarea>
-    <?php echo $Bio ?>
-</textarea>
-
-<p>Socials</p>
-<ul>
-    <script>
-        let Socials = JSON.parse(`<?php echo $Socials ?>`)
-        Socials.forEach(social => {
-            if(social[1] !== ""){
-                document.write(`<li>${social[0]} - ${social[1]}</li>`)
-            }
-        })
-    </script>
-</ul>
-<a href="profile_edit.php">Edit Profile</a>
+<form action="edit_profile.php" method="post" id="profileform">
+    Username: <input type="text" name="Username" value="<?php echo $Username ?>">
+    Bio: <textarea name="Bio" form="profileform"><?php echo $Bio ?></textarea>
+    Twitter: <input type="text" name="SocialsTwitter">
+    Discord: <input type="text" name="SocialsDiscord">
+    <input type="submit">
+</form>
 
 </body>
 
